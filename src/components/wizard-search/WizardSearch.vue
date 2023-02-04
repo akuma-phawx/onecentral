@@ -22,9 +22,9 @@
     >
       <div
         class="d-flex justify-content-center align-items-center"
-        v-if="!results.length > 0"
+        v-if="results.length === 0"
       >
-        <div v-if="isLoading" class="spinner-border" role="status">
+        <div v-if="isLoading" class="spinner-border text-primary" role="status">
           <span class="sr-only"></span>
         </div>
         <div v-else class="display-text">
